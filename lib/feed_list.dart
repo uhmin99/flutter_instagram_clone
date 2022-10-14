@@ -8,16 +8,19 @@ class FeedList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView.builder(
-        itemBuilder: (BuildContext context, int index) {
-          return Center(
-            child: FeedWidget(
-              feedData: feedListData[index],
-            ),
-          );
-        },
-        itemCount: feedListData.length,
-      ),
-    );
+        body: Column(
+      children: [
+        ListView.builder(
+          itemBuilder: (BuildContext context, int index) {
+            return Center(
+              child: FeedWidget(
+                feedData: feedListData[index],
+              ),
+            );
+          },
+          itemCount: feedListData.length,
+        ),
+      ],
+    ));
   }
 }

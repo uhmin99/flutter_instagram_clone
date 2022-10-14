@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_instagram_clone/consts.dart';
-import 'package:flutter_instagram_clone/single_feed/top_title.dart';
-import 'action_buttons.dart';
-import 'comments.dart';
-import 'description.dart';
-import 'likes_text.dart';
-import 'main_image.dart';
+import 'package:flutter_instagram_clone/single_feed/widgets/action_buttons.dart';
+import 'package:flutter_instagram_clone/single_feed/widgets/comments.dart';
+import 'package:flutter_instagram_clone/single_feed/widgets/description.dart';
+import 'package:flutter_instagram_clone/single_feed/widgets/likes_text.dart';
+import 'package:flutter_instagram_clone/single_feed/widgets/main_image.dart';
+import 'package:flutter_instagram_clone/single_feed/widgets/top_title.dart';
 
 class FeedWidget extends StatelessWidget {
   const FeedWidget({super.key, required this.feedData});
